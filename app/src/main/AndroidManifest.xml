@@ -9,14 +9,18 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name="br.com.fiap.rpp.demopersistence.ui.newword.NewWordActivity">
+        <activity android:name=".ui.form.FormActivity">
         </activity>
-        <activity android:name=".ui.main.MainActivity">
+        <activity android:name=".ui.menu.MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".ui.newword.NewWordActivity">
+        </activity>
+        <activity android:name=".ui.main.MainActivity">
         </activity>
     </application>
 

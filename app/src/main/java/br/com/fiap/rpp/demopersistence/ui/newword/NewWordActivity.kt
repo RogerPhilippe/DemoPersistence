@@ -13,12 +13,20 @@ class NewWordActivity : AppCompatActivity() {
 
     private lateinit var editWordView: EditText
 
+    private lateinit var button: Button
+
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_word)
         editWordView = findViewById(R.id.edit_word)
 
-        val button = findViewById<Button>(R.id.button_save)
+        button = findViewById(R.id.button_save)
+
+        this.setupListener()
+    }
+
+    private fun setupListener() {
+
         button.setOnClickListener {
             val replyIntent = Intent()
             if (TextUtils.isEmpty(editWordView.text)) {
